@@ -1,0 +1,21 @@
+<p>Precio producto</p>
+      <input type="number" id="precio"></input>
+      <button id="btn">Enviar</button>
+      <div id="resultado"></div>
+
+
+
+
+
+21:22
+typescript
+21:22
+let precio: number = document.getElementById("precio");
+let btn = document.getElementById("btn");
+btn.addEventListener("click", () => {
+  if (precio.value >= 1000) {
+    console.log(precio.value - (precio.value * 0.1));
+  } else {
+    console.log(precio.value);
+  }
+})
